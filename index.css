@@ -14,8 +14,10 @@ img {
 }
 
 main {
+    position: fixed;
     transform: translateX(450px);
     height: 100%;
+    width: 100%;
     padding-top: 100px;
     padding-left: 30px;
     background-color: whitesmoke;
@@ -33,6 +35,7 @@ form {
     margin-top: 50px;
     padding: 20 20px;
     box-sizing: border-box;
+    box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.17);
 }
 
 form p {
@@ -41,12 +44,25 @@ form p {
     margin-bottom: 20px;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+
+
+input {
+    margin-bottom: 10px;
 }
 
-label {
-    margin-bottom: 10px;
+.form-stuff {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+button {
+    color: white;
+    background-color: #596D48;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    border-radius: 5px;
 }
